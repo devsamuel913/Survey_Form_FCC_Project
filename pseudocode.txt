@@ -1,0 +1,95 @@
+(div)
+1)name(label)
+(input type="text")
+(/div)
+
+
+
+
+(div)
+2)email(label)
+(input type="text")
+(/div)
+
+
+
+
+
+(div)
+3)age(label)
+(input type="text")
+(/div)
+
+
+
+
+
+
+
+(div)
+4)date(label)
+(input type="date")
+(/div)
+
+
+
+
+
+(div)
+5)how was the quality of the service?(label)
+(input type="select")
+	-very good (option)
+	-good (option)
+	-more or less (option)
+	-bad (option)
+	-very bad (option)
+(/div)
+	
+	
+	
+	
+	
+(div)	
+6)(input type="select")was your problem solved?(label)
+	-yes (option)
+	-no (option)
+(/div)
+
+
+
+
+
+(div)	
+7)would you recommend fedex to a friend?(p)
+	-definitely (input type="radio") <--- checked
+	-maybe (input type="radio")
+	-not sure (input type="radio")
+(/div)
+	
+	
+	
+	
+	
+(div)	
+8)what would you like to see improved?(p)
+	-less time on hold (input type="checkbox")
+	-getting tranferred fewer times (input type="checkbox")
+	-technicians available (input type="checkbox")
+	-refund (input type="checkbox")
+	-clearer communication (input type="checkbox")
+(/div)	
+
+
+
+
+
+	
+(div)
+9)(input type="textarea")any comments or suggestions?(label)
+(/div)
+
+(div)
+10)(button type="submit")
+(/div)
+	
+

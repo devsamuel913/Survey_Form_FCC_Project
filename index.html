@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quality Assurance Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Quality Assurance Form</h1>
+            <p id="description">Rate the quality of the service you received by filling out this form:</p>
+        </header>
+        <div class="container">
+            <form id="survey-form" action="https://register-demo.freecodecamp.org" method="post"> 
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                    id="name" 
+                    name="name"
+                    type="text" 
+                    placeholder="Enter your name"
+                    required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input 
+                    id="email" 
+                    name="email"
+                    type="email" 
+                    placeholder="Enter your email"
+                    required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+                    <input 
+                    placeholder="Age"
+                    id="number" 
+                    name="number"
+                    type="number" 
+                    min="18" 
+                    max="100">
+                </div>
+                <div class="form-group">
+                    <label id="date-label" for="date">Date</label>
+                    <input 
+                    id="date"
+                    name="date" 
+                    type="date"
+                    required> <!--<input> attributes are formatted vertically-->
+                </div>
+                <div class="form-group">
+                    <label id="SQ-label" for="dropdown">How was the service quality?</label>
+                    <select id="dropdown" name="service-quality" required> <!--<option> elements must always have a value attribute--> <!--<select> attributes are formatted horizontally-->
+                        <option value="very-good">Very good</option>
+                        <option value="good">Good</option>
+                        <option value="more-or-less">More or less</option>
+                        <option value="bad">Bad</option>
+                        <option value="very-bad">Very bad</option>
+                    </select>
+                </div>    
+                <div class="form-group">
+                    <label id="problem-solved-label" for="yes-no">Was your problem solved</label>
+                    <select  id="yes-no" name="problem-solved" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend FEDEX to a friend?</p>
+                    <label for="definitely" >
+                    <input
+                    value="definitely"
+                    type="radio" 
+                    name="user-preference" 
+                    id="definitely" 
+                    checked>
+                    Definitely</label>
+
+                    <label for="maybe">
+                    <input 
+                    id="maybe" 
+                    value="maybe"
+                    type="radio" 
+                    name="user-preference">
+                    Maybe</label>
+
+                    <label for="notsure">
+                    <input 
+                    id="notsure" 
+                    value="not-sure"
+                    type="radio" 
+                    name="user-preference">
+                    Not sure</label>
+                    
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improved? <span class="checkATA">(Check all that apply)</span></p>
+                    <label>
+                        <input
+                        value="less-time-on-hold"
+                        type="checkbox"
+                        class="inline"
+                        name="prefer">
+                    Less time on hold</label>
+                    <label>
+                        <input
+                        value="get-transferred-fewer-times"
+                        type="checkbox"
+                        class="inline"
+                        name="prefer">
+                    Get transferred fewer times</label>
+                    <label>
+                        <input
+                        value="more-technicians-available"
+                        type="checkbox"
+                        class="inline"
+                        name="prefer">
+                    More technicians available</label>
+                    <label>
+                        <input
+                        value="refund"
+                        type="checkbox"
+                        class="inline"
+                        name="prefer">
+                    Refund</label>
+                    <label>
+                        <input
+                        value="clearer-com"
+                        type="checkbox"
+                        class="inline"
+                        name="prefer">
+                    Clearer communication</label>
+                </div>
+                <div class="form-group">
+                    <p id="question">Any comments or suggestions?</p>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    rows="4"
+                    cols="30"
+                    placeholder= "Enter your comment here...">
+                    
+                    </textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        
+        
+        
+    </body>
+</html>
+<!--This HTML code has already been validated by FCC so i shouldnt't make changes on it-->
